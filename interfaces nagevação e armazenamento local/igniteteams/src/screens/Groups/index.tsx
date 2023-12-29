@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { FlatList } from 'react-native'
+import Button from '@components/Buttons'
+import EmptyList from '@components/EmptyList'
 import GroupCard from '@components/GroupCard'
 import Header from '@components/Header'
 import Highlight from '@components/Highlight'
 
 import * as S from './styles'
-import EmptyList from '@components/EmptyList'
-import Button from '@components/Buttons'
 
 export default function Groups() {
   const [groups, setGroups] = useState<string[]>([])
